@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Menu</title>
+
+    <style>
+
+        /* Whole page */
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: 'Comic Sans MS',cursive;
+            background-color: #fff8ef;
+            text-align: center;
+        }
+
+        /* Main heading */
+        h1 {
+            color: green;
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-family:'Comic Sans MS',cursive;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Menu container */
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(2, 250px);
+            justify-content: center;
+            gap: 30px;
+        }
+
+        /* Each menu card */
+        .menu-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        /* Hover effect */
+        .menu-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            font-family: 'Comic Sans MS',cursive;
+        }
+
+        /* Category heading */
+        h2 {
+            color: green;
+            margin-bottom: 15px;
+            font-family:'Comic Sans MS',cursive;
+        }
+
+        /* Menu images */
+        .menu-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .menu-card img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Menu links */
+        .menu-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 1opx;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: 'Comic Sans MS',cursive;
+        }
+
+        .menu-link:hover {
+            background-color: green;
+        }
+
+        /* Back button */
+        .back-home {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 12px 20px;
+            background-color: #529e56;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .back-home:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>🍴 Our Menu</h1>
+
+    <p>Select a Category to view the food items:</p>
+
+    <div class="menu-container">
+
+        <!-- Veg -->
+        <div class="menu-card">
+            <h2>🥗 VEG</h2>
+
+            <a href="veg.html">
+                <img src="image/veg.jpeg"
+                     alt="Veg Menu">
+            </a>
+
+            <br>
+
+            <a class="menu-link" href="veg.html">
+                👉 View VEG Menu
+            </a>
+        </div>
+
+
+        <!-- Non-Veg -->
+        <div class="menu-card">
+            <h2>🍗 NON-VEG</h2>
+
+            <a href="non-veg.html">
+                <img src="image/non veg.jpeg"
+                     alt="Non-Veg Menu">
+            </a>
+
+            <br>
+
+            <a class="menu-link" href="non-veg.html">
+                👉 View NON-VEG Menu
+            </a>
+        </div>
+
+
+        <!-- Drinks -->
+        <div class="menu-card">
+            <h2>🥤 DRINKS</h2>
+
+            <a href="drinks.html">
+                <img src="image/drinks.jpeg"
+                     alt="Drinks Menu">
+            </a>
+
+            <br>
+
+            <a class="menu-link" href="drinks.html">
+                👉 View DRINKS Menu
+            </a>
+        </div>
+
+
+        <!-- Chats -->
+        <div class="menu-card">
+            <h2>🍟 CHATS</h2>
+
+            <a href="chats.html">
+                <img src="image/chatt.jpeg"
+                     alt="Chatt Menu">
+            </a>
+
+            <br>
+
+            <a class="menu-link" href="chat.html">
+                👉 View CHATS Menu
+            </a>
+        </div>
+
+    </div>
+
+    <a class="back-home" href="GNS.html">
+        🏠 Back to Home
+    </a>
+
+</body>
+</html>
